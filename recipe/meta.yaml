@@ -1,5 +1,5 @@
 {% set name = "awscli" %}
-{% set version = "2.13.12" %}
+{% set version = "2.13.13" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 # v2 is not on PyPI https://github.com/aws/aws-cli/issues/6785
 source:
   url: https://github.com/aws/aws-cli/archive/{{ version }}.tar.gz
-  sha256: d021a70d62b6dbf59628809cc3639c652e9dc7794f06d4141dfcbffc745a7616
+  sha256: e3f45acca4f79af26a8aec8227a856082c8ec1cc76f8e9d1f051552c318afc7f
 
 build:
   number: 0
@@ -19,8 +19,6 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     # The autocomplete index step is run on the build host
