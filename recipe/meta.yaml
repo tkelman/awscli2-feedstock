@@ -21,6 +21,8 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     # The autocomplete index step is run on the build host
     - colorama >=0.2.5,<0.4.7                # [build_platform != target_platform]
     - docutils >=0.10,<0.20                  # [build_platform != target_platform]
