@@ -11,7 +11,7 @@ source:
   sha256: 8c0878dec1e4fe4aa9fefbf19a52694c7c1b65596796a6c5cc0baf86bc628b74
 
 build:
-  number: 0
+  number: 1
   # Build uses pep517 with a custom backend
   # console_scripts entrypoints aren't used, so this can't be noarch
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [not unix]
