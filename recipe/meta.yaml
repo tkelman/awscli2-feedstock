@@ -1,6 +1,6 @@
 # DOUBLE CHECK THESE FOR EACH NEW RELEASE
 # greyskull doesn't seem to update them automatically from upstream
-{% set awscrt = "awscrt >=0.16.4,<=0.19.10" %}
+{% set awscrt = "awscrt >=0.16.4,<=0.19.12" %}
 {% set colorama = "colorama >=0.2.5,<0.4.7" %}
 {% set cryptography = "cryptography >=3.3.2,<=40.0.2" %}
 {% set distro = "distro >=1.5.0,<1.9.0" %}
@@ -13,7 +13,7 @@
 {% set urllib3 = "urllib3 >=1.25.4,<1.27" %}
 
 {% set name = "awscli" %}
-{% set version = "2.13.34" %}
+{% set version = "2.13.35" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ package:
 # v2 is not on PyPI https://github.com/aws/aws-cli/issues/6785
 source:
   url: https://github.com/aws/aws-cli/archive/{{ version }}.tar.gz
-  sha256: 1ca6dd478160289872ecf830f5465f7ecb45f7c6dcf24864a9e3e010047846a8
+  sha256: b8f37502e6fd6fbf7efbfb43aabc955ba638f3ff3416a886635e14d4eb3c4496
 
 build:
   number: 0
