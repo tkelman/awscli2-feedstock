@@ -12,7 +12,7 @@
 {% set ruamel_yaml_clib = "ruamel.yaml.clib >=0.2.0,<=0.2.7" %}
 {% set urllib3 = "urllib3 >=1.25.4,<1.27" %}
 {% set name = "awscli" %}
-{% set version = "2.15.2" %}
+{% set version = "2.15.3" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ package:
 # v2 is not on PyPI https://github.com/aws/aws-cli/issues/6785
 source:
   url: https://github.com/aws/aws-cli/archive/{{ version }}.tar.gz
-  sha256: f71cda7e53beeea8db7d5af3b2a56efa47a0b341fe1eadf7be626be32f365960
+  sha256: 1cb33bb19bbff0020182dc44e0a18d9eb696a4f08a7913966b2f1fe71b3f45bc
 
 build:
   number: 0
